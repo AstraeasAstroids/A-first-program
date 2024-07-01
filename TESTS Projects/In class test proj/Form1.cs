@@ -83,7 +83,7 @@ namespace In_class_test_proj
             try
             {
                 int number = int.Parse(inputTextBox.Text);
-                if (number > +1 && number < +10)
+                if (number > +0 && number < +11)
                 {
                     MessageBox.Show("That number is accepted.");
                 }

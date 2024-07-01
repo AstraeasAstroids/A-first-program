@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -48,8 +50,54 @@ namespace In_class_test_proj
         {
             if (comboBox1.SelectedIndex == 0)
             {
-                var PictureBox1 = new PictureBox();                
-            }            
-        }       
+                pictureBox1.Image = imageList1.Images[0];                
+            }   
+            if (comboBox1.SelectedIndex == 1)
+            {
+                pictureBox1.Image = imageList1.Images[1];
+            }
+            if (comboBox1.SelectedIndex == 2)
+            {
+                pictureBox1.Image = imageList1.Images[2];
+            }
+            if (comboBox1.SelectedIndex == 3)
+            {
+                pictureBox1.Image = imageList1.Images[3];   
+            }
+            if (comboBox1.SelectedIndex == 4)
+            {
+                pictureBox1.Image = imageList1.Images[4];
+            }
+            if (comboBox1.SelectedIndex == 5)
+            {
+                pictureBox1.Image = imageList1.Images[5];
+            }
+            if (comboBox1.SelectedIndex == 6)
+            {
+                pictureBox1.Image = imageList1.Images[6];
+            }
+        }
+
+        private void checkButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int number = int.Parse(inputTextBox.Text);
+                if (number > +1 && number < +10)
+                {
+                    MessageBox.Show("That number is accepted.");
+                }
+                else
+                {
+                    MessageBox.Show("That number is NOT accepted.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+                
+        
     }
 }

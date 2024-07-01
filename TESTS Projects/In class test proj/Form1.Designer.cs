@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,9 +47,16 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.inputTextBox = new System.Windows.Forms.TextBox();
+            this.checkButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,6 +150,9 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.checkButton);
+            this.panel4.Controls.Add(this.inputTextBox);
+            this.panel4.Controls.Add(this.label7);
             this.panel4.Location = new System.Drawing.Point(665, 208);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(212, 323);
@@ -148,6 +160,7 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.exitButton);
             this.panel5.Location = new System.Drawing.Point(908, 208);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(175, 322);
@@ -217,6 +230,54 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 32);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(156, 39);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Enter an integer in the range of \r\n\r\n1 through 10.";
+            // 
+            // inputTextBox
+            // 
+            this.inputTextBox.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputTextBox.Location = new System.Drawing.Point(5, 104);
+            this.inputTextBox.Name = "inputTextBox";
+            this.inputTextBox.Size = new System.Drawing.Size(92, 33);
+            this.inputTextBox.TabIndex = 1;
+            // 
+            // checkButton
+            // 
+            this.checkButton.Location = new System.Drawing.Point(14, 161);
+            this.checkButton.Name = "checkButton";
+            this.checkButton.Size = new System.Drawing.Size(69, 44);
+            this.checkButton.TabIndex = 2;
+            this.checkButton.Text = "Check Value";
+            this.checkButton.UseVisualStyleBackColor = true;
+            this.checkButton.Click += new System.EventHandler(this.checkButton_Click);
+            // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(35, 167);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(111, 98);
+            this.exitButton.TabIndex = 0;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "Violet.png");
+            this.imageList1.Images.SetKeyName(1, "Indigo.png");
+            this.imageList1.Images.SetKeyName(2, "Blue.png");
+            this.imageList1.Images.SetKeyName(3, "Green.png");
+            this.imageList1.Images.SetKeyName(4, "Yellow.png");
+            this.imageList1.Images.SetKeyName(5, "Orange.png");
+            this.imageList1.Images.SetKeyName(6, "Red.png");
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -235,6 +296,9 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -259,6 +323,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button checkButton;
+        private System.Windows.Forms.TextBox inputTextBox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
 

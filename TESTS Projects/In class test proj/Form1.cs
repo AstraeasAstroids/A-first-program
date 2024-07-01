@@ -97,7 +97,10 @@ namespace In_class_test_proj
                 MessageBox.Show(ex.Message);
             }
         }
-                
-        
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thanks for clicking!!!");
+        }
     }
 }

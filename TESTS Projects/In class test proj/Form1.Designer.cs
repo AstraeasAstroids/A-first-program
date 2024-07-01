@@ -50,8 +50,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.inputTextBox = new System.Windows.Forms.TextBox();
             this.checkButton = new System.Windows.Forms.Button();
-            this.exitButton = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -160,7 +160,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.exitButton);
+            this.panel5.Controls.Add(this.button2);
             this.panel5.Location = new System.Drawing.Point(908, 208);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(175, 322);
@@ -257,15 +257,6 @@
             this.checkButton.UseVisualStyleBackColor = true;
             this.checkButton.Click += new System.EventHandler(this.checkButton_Click);
             // 
-            // exitButton
-            // 
-            this.exitButton.Location = new System.Drawing.Point(35, 167);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(111, 98);
-            this.exitButton.TabIndex = 0;
-            this.exitButton.Text = "Exit";
-            this.exitButton.UseVisualStyleBackColor = true;
-            // 
             // imageList1
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
@@ -277,6 +268,18 @@
             this.imageList1.Images.SetKeyName(4, "Yellow.png");
             this.imageList1.Images.SetKeyName(5, "Orange.png");
             this.imageList1.Images.SetKeyName(6, "Red.png");
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.DarkGreen;
+            this.button2.Location = new System.Drawing.Point(50, 33);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(85, 90);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Click Here";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
@@ -326,8 +329,8 @@
         private System.Windows.Forms.Button checkButton;
         private System.Windows.Forms.TextBox inputTextBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
